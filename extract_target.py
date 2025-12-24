@@ -10,7 +10,7 @@ import config
 def extract_files_from_corpus():
     """corpusディレクトリからテキストファイルを抽出する関数"""
     # 覚えたいアニメの一覧を読み込む --- (*1)
-    with open(config.POP_ANIME_FILE, "r", encoding="shift_jis") as f:
+    with open(config.POP_ANIME_FILE, "r", encoding="utf-8") as f:
         pop_anime = f.read().split("\n")
     # corpusディレクトリ内のテキストファイルを取得 --- (*2)
     file_list = []
